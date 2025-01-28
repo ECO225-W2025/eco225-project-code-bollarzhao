@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.2.0-preview" />
+  <PropertyGroup>
+    <Name>datasets</Name>
+    <ProjectGuid>{973EBC92-83A5-49F4-815E-EA66D2C07E18}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\archive\acquisitions.csv" />
+    <None Include="..\..\..\Downloads\archive\degrees.csv" />
+    <None Include="..\..\..\Downloads\archive\funding_rounds.csv" />
+    <None Include="..\..\..\Downloads\archive\funds.csv" />
+    <None Include="..\..\..\Downloads\archive\investments.csv" />
+    <None Include="..\..\..\Downloads\archive\ipos.csv" />
+    <None Include="..\..\..\Downloads\archive\milestones.csv" />
+    <None Include="..\..\..\Downloads\archive\objects.csv" />
+    <None Include="..\..\..\Downloads\archive\offices.csv" />
+    <None Include="..\..\..\Downloads\archive\people.csv" />
+    <None Include="..\..\..\Downloads\archive\relationships.csv" />
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+</Project>

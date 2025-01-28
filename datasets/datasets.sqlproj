@@ -18,6 +18,7 @@
     <None Include="..\..\..\Downloads\archive\objects.csv" />
     <None Include="..\..\..\Downloads\archive\offices.csv" />
     <None Include="..\..\..\Downloads\archive\people.csv" />
+    <None Include="..\..\..\Downloads\archive\public_emdat_biological_disasters_datasets.csv" />
     <None Include="..\..\..\Downloads\archive\relationships.csv" />
   </ItemGroup>
   <Target Name="BeforeBuild">
